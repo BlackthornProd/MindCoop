@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GM
+  - Enemy
+  - Obstacle
+  - Weapon
+  - Boss
+  - Blood
+  - Tracker
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Environment
+    uniqueID: 4054974723
+    locked: 0
+  - name: Enemies
+    uniqueID: 649190743
+    locked: 0
+  - name: Player1
+    uniqueID: 1297172345
+    locked: 0
+  - name: Player2
+    uniqueID: 661681727
+    locked: 0
+  - name: Weapon
+    uniqueID: 3344198817
+    locked: 0
+  - name: FX
+    uniqueID: 3109122703
+    locked: 0
