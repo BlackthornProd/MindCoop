@@ -9,10 +9,11 @@ public class EnemyShotOne : MonoBehaviour {
 	int randomDir;
 
 	private GameMaster gm;
+	public GameObject destroyEffect;
 
 	void Start(){
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-		Destroy(gameObject, 3f);
+		Invoke("DestroyFx", 3f);
 		randomDir = Random.Range(1, 5);
 	}
 
@@ -35,7 +36,14 @@ public class EnemyShotOne : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.tag == "Player"){
 			gm.TakeDamage(damage);
-			Destroy(gameObject);
+			DestroyFx();
 		}
+	}
+
+	void DestroyFx(){
+
+			GameObject fx = (GameObject)Instantiate(destroyEffect, transform.position, Quaternion.identity);
+			Destroy(fx, 3f);
+			Destroy(gameObject);
 	}
 }

@@ -11,6 +11,7 @@ TagManager:
   - Boss
   - Blood
   - Tracker
+  - Bomb
   layers:
   - Default
   - TransparentFX

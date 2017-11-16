@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1510129734356010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 2.65, z: 0}
+  m_LocalPosition: {x: 19.761597, y: 1.1159966, z: 0}
   m_LocalScale: {x: 2.277357, y: 2.2773564, z: 2.2773564}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,6 +91,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 12
   damage: 10
+  destroyEffect: {fileID: 1640085044667364, guid: bfc8e767ac6b57c48b693ca9f65d2386,
+    type: 2}
 --- !u!212 &212869124864781438
 SpriteRenderer:
   m_ObjectHideFlags: 1

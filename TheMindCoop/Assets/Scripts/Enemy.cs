@@ -15,14 +15,21 @@ public class Enemy : MonoBehaviour {
 
 	private GameMaster gm;
 	private CameraShake shake;
+
 	public bool isFatty = false;
 	private Fatty fatty;
+	public bool isCarrier;
+	private FireCarrier carrier;
 
 	void Start(){
 		shake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 		if(isFatty == true){
 			fatty = GetComponent<Fatty>();
+		}
+
+		if(isCarrier == true){
+			carrier = GetComponent<FireCarrier>();
 		}
 	}
 
@@ -45,6 +52,11 @@ public class Enemy : MonoBehaviour {
 
 	public void TakeDamage(int damage){
 		shake.Shake(.1f, .1f);
+
+		if(isCarrier == true){
+			carrier.enabled = true;
+		}
+
 		health -= damage;
 
 	}

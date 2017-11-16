@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  range: 1
+  range: 0.5
   damage: 5
   destructionTime: 0.65
 --- !u!212 &212020528102669516

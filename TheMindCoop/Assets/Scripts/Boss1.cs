@@ -19,6 +19,7 @@ public class Boss1 : MonoBehaviour {
 	private CameraShake shake;
 
 	public GameObject bloodSplash;
+	public GameObject deathFx;
 	public GameObject portal;
 
 	bool dealDam = true;
@@ -44,6 +45,7 @@ public class Boss1 : MonoBehaviour {
 		gm.bossDisplay.text = "The Dark Mother : " + health;
 
 		if(health <= 0){
+			Instantiate(deathFx, transform.position, Quaternion.identity);
 			Instantiate(bloodSplash, transform.position, Quaternion.identity);
 			Instantiate(portal, transform.position, Quaternion.identity);
 			Destroy(gameObject);

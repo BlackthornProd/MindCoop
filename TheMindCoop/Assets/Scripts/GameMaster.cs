@@ -19,10 +19,6 @@ public class GameMaster : MonoBehaviour {
 	}
 
 	void Update(){
-
-		if(Input.GetKeyDown(KeyCode.Space)){
-			SceneManager.LoadScene("Level2");
-		}
 		fireDisplay.text = "FIRE : " + fire;
 
 		if(fire <= 0){

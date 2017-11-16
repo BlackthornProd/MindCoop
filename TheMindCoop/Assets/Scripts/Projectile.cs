@@ -47,6 +47,9 @@ public class Projectile : MonoBehaviour {
 		}  else if(other.CompareTag("Boss")){
 			other.GetComponent<Boss1>().TakeDamage(damage);
 			StartCoroutine(AnimWait());
+		} else if(other.CompareTag("Bomb")){
+			other.GetComponent<Bomb>().DestroyBomb(damage);
+			StartCoroutine(AnimWait());
 		}
 	}
 
