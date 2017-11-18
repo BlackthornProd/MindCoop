@@ -12,6 +12,7 @@ TagManager:
   - Blood
   - Tracker
   - Bomb
+  - Merchant
   layers:
   - Default
   - TransparentFX

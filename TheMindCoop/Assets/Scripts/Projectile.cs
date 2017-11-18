@@ -35,14 +35,18 @@ public class Projectile : MonoBehaviour {
 
 	// Checks Collisions !
 	void OnTriggerEnter2D(Collider2D other){
+
+		if(other.CompareTag("Enemy") || other.CompareTag("Merchant")){
+				other.GetComponent<Enemy>().TakeDamage(damage);
+				StartCoroutine(AnimWait());
+		}
+
 		
 		if(other.CompareTag("Player") && damage > 0){
 			gm.TakeDamage(damage);
 			StartCoroutine(AnimWait());
-		} else if(other.CompareTag("Enemy")){
-			other.GetComponent<Enemy>().TakeDamage(damage);
-			StartCoroutine(AnimWait());
-		} else if(other.CompareTag("Obstacle")){
+		} 
+		 else if(other.CompareTag("Obstacle")){
 			StartCoroutine(AnimWait());
 		}  else if(other.CompareTag("Boss")){
 			other.GetComponent<Boss1>().TakeDamage(damage);
@@ -50,7 +54,10 @@ public class Projectile : MonoBehaviour {
 		} else if(other.CompareTag("Bomb")){
 			other.GetComponent<Bomb>().DestroyBomb(damage);
 			StartCoroutine(AnimWait());
+		} else if(other.CompareTag("Merchant")){
+			other.GetComponent<Merchant>().isAngry = true;
 		}
+
 	}
 
 

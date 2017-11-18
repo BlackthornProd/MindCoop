@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour {
 	private Fatty fatty;
 	public bool isCarrier;
 	private FireCarrier carrier;
+	public bool isMerchant;
+	private Merchant merchant;
 
 	void Start(){
 		shake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
@@ -30,6 +32,10 @@ public class Enemy : MonoBehaviour {
 
 		if(isCarrier == true){
 			carrier = GetComponent<FireCarrier>();
+		}
+
+		if(isMerchant == true){
+			merchant = GetComponent<Merchant>();
 		}
 	}
 
@@ -57,6 +63,10 @@ public class Enemy : MonoBehaviour {
 			carrier.enabled = true;
 		}
 
+		if(isMerchant == true){
+				merchant.isAngry = true;
+		}
+
 		health -= damage;
 
 	}
@@ -66,6 +76,10 @@ public class Enemy : MonoBehaviour {
 		if(other.CompareTag("Player")){
 
 			gm.TakeDamage(damage);
+
+			if(isMerchant == true){
+				merchant.isAngry = true;
+			}
 			health = 0;
 		} 
 	}

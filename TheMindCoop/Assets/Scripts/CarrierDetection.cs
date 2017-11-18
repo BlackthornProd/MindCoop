@@ -18,9 +18,9 @@ public class CarrierDetection : MonoBehaviour {
 
 	void Update(){
 
-		if(Vector2.Distance(transform.position, targets[0].transform.position) < 15){
+		if(Vector2.Distance(transform.position, targets[0].transform.position) < 12){
 			anim.SetBool("AngryIdle", true);
-		} else if(Vector2.Distance(transform.position, targets[1].transform.position)  < 15){
+		} else if(Vector2.Distance(transform.position, targets[1].transform.position)  < 12){
 			anim.SetBool("AngryIdle", true);
 		} else {
 			anim.SetBool("AngryIdle", false);
