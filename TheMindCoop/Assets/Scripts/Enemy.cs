@@ -23,7 +23,11 @@ public class Enemy : MonoBehaviour {
 	public bool isMerchant;
 	private Merchant merchant;
 
+
+	private HurtPanel hurtPanel;
+
 	void Start(){
+		hurtPanel = GameObject.FindGameObjectWithTag("HurtPanel").GetComponent<HurtPanel>();
 		shake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 		if(isFatty == true){
@@ -75,6 +79,7 @@ public class Enemy : MonoBehaviour {
 
 		if(other.CompareTag("Player")){
 
+			hurtPanel.Anim();
 			gm.TakeDamage(damage);
 
 			if(isMerchant == true){

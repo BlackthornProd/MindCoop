@@ -5,6 +5,7 @@ using UnityEngine;
 public class FireBoost : MonoBehaviour {
 
 	private GameMaster gm;
+	public GameObject destroyFx;
 
 	void Start(){
 
@@ -14,6 +15,8 @@ public class FireBoost : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Player")){
 			gm.fireShield = 75;
+			GameObject fx = (GameObject) Instantiate(destroyFx, transform.position, Quaternion.identity);
+			Destroy(fx, 5f);
 			Destroy(gameObject);
 		} 
 	}

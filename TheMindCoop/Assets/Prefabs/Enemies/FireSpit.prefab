@@ -9,47 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1253609605044642}
+  m_RootGameObject: {fileID: 1936144067080852}
   m_IsPrefabParent: 1
---- !u!1 &1253609605044642
+--- !u!1 &1936144067080852
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4990886492431384}
-  - component: {fileID: 212403011864475138}
-  - component: {fileID: 58929976878208286}
-  - component: {fileID: 50682319471744402}
-  - component: {fileID: 114565743700958592}
+  - component: {fileID: 4614487818365528}
+  - component: {fileID: 212435328774102726}
+  - component: {fileID: 58823087992291712}
+  - component: {fileID: 50272616185600488}
+  - component: {fileID: 114429412327331728}
   m_Layer: 0
-  m_Name: Fire Boost
+  m_Name: FireSpit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4990886492431384
+--- !u!4 &4614487818365528
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1253609605044642}
+  m_GameObject: {fileID: 1936144067080852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.938694, y: -5.9991302, z: 0}
+  m_LocalPosition: {x: -3.8, y: -6.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50682319471744402
+--- !u!50 &50272616185600488
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1253609605044642}
+  m_GameObject: {fileID: 1936144067080852}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -63,12 +63,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
---- !u!58 &58929976878208286
+--- !u!58 &58823087992291712
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1253609605044642}
+  m_GameObject: {fileID: 1936144067080852}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -77,24 +77,29 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.364
---- !u!114 &114565743700958592
+  m_Radius: 0.645
+--- !u!114 &114429412327331728
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1253609605044642}
+  m_GameObject: {fileID: 1936144067080852}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe6a15c59f5edb2439c6d250a22d03c9, type: 3}
+  m_Script: {fileID: 11500000, guid: a8a0fdd4c8eb52f4da5cccba7e37ff7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &212403011864475138
+  speed: 7.5
+  damage: 5
+  destroyEffect: {fileID: 1841619968187750, guid: 9ecd1c1a4fd4c2343816d11dd1f565fe,
+    type: 2}
+  lifeTime: 6
+--- !u!212 &212435328774102726
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1253609605044642}
+  m_GameObject: {fileID: 1936144067080852}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -121,12 +126,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ca146aed52d00824e8f1864414624d68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0de29315519b8c4a95fb6d6f70b6f39, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.624, y: 4.728}
+  m_Size: {x: 1.29, y: 1.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

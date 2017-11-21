@@ -338,7 +338,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1781057419004212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.85, y: -6.3, z: -0.0546875}
+  m_LocalPosition: {x: 19.408398, y: -30.677216, z: -0.0546875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4385257541922762}
@@ -397,7 +397,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1456994100283028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.67, z: 0}
+  m_LocalPosition: {x: 0, y: -6.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4747582196450920}
@@ -466,13 +466,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e222a9b365af3bd46a83a00edecb2de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  damage: 50
+  health: 200
+  damage: 125
   dropChance: 100
   drops:
-  - {fileID: 1370267700342344, guid: b0c06f209cba9af46aef08fa80078b8f, type: 2}
-  - {fileID: 1253609605044642, guid: 30dbf9d8a09b8334092fb27af614eabe, type: 2}
-  - {fileID: 1750333377750460, guid: 5ee523b6b06f81a44afb9667d1cb9266, type: 2}
+  - {fileID: 1738482424301976, guid: e10ed2afad494ef4b8c9e875f2855276, type: 2}
+  - {fileID: 1867508297013828, guid: 13c0e76be2a0c424583f0f438346d767, type: 2}
+  - {fileID: 1867508297013828, guid: 13c0e76be2a0c424583f0f438346d767, type: 2}
+  - {fileID: 1738482424301976, guid: e10ed2afad494ef4b8c9e875f2855276, type: 2}
+  - {fileID: 1453863622373478, guid: 281521b52ede30a489a24920086fbffc, type: 2}
   bloodSplash:
   - {fileID: 1470778717992862, guid: 53604cdb411d0a045882fb5a73360f7e, type: 2}
   - {fileID: 1161993084350370, guid: 979df6a00b8374540951a864c43565ff, type: 2}
@@ -480,21 +482,24 @@ MonoBehaviour:
   - {fileID: 1564617576159718, guid: 58b31a850d1072f45bcd2af5aac3883d, type: 2}
   isFatty: 0
   isCarrier: 0
-  isMerchant: 0
+  isMerchant: 1
 --- !u!114 &114909417139388840
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1781057419004212}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f4d8f087c271e0449a76a1dd4551f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyDistance: 15
+  buyDistance: 20
   giftSpawnPos: {fileID: 4969274048292526}
   isAngry: 0
+  hasBought: 0
+  fireSpit: {fileID: 1936144067080852, guid: 77d3d00307be1d74fad2e18f89f26717, type: 2}
+  startTimeBtwFireSpit: 0.5
 --- !u!122 &122343587529005522
 Halo:
   m_ObjectHideFlags: 1

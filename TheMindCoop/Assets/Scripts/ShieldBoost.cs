@@ -13,7 +13,7 @@ public class ShieldBoost : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Player")){
-			gm.shield = 75;
+			gm.shield += 100;
 			Destroy(gameObject);
 		} 
 	}

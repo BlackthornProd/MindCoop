@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db779a8fc4f77fb45804b105a47a2ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 200
   speed: 3
   damage: 100
   spawns:
@@ -537,7 +537,7 @@ MonoBehaviour:
   bloodSplash: {fileID: 1470778717992862, guid: 53604cdb411d0a045882fb5a73360f7e,
     type: 2}
   deathFx: {fileID: 1124409191308266, guid: 9803f5b21a2bae34fb76e18f143d7408, type: 2}
-  portal: {fileID: 1380246835914436, guid: 03e64ab66b447ea438f0d38c73cdd928, type: 2}
+  portal: {fileID: 1487779530609570, guid: 617d81e972e59f6459f9d1581271be5f, type: 2}
 --- !u!122 &122560882052473006
 Halo:
   m_ObjectHideFlags: 1

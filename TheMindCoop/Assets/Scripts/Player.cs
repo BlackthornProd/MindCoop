@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
 	int black;
 	float time = 1f;
 
+
 	void Start(){
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
@@ -93,9 +94,10 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
+		
 		if(other.CompareTag("Blood")){
 			black = 1;
-		}
+		} 
 	}
 
 	void Tst(){

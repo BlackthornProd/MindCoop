@@ -15,8 +15,10 @@ public class Boss1 : MonoBehaviour {
 	public GameObject[] spawns;
 	public Transform[] spawnPos;
 	private GameObject[] targets;
-	private GameMaster gm;
+	private FireTracker tracker;
 	private CameraShake shake;
+	private GameMaster gm;
+	private HurtPanel hurtPanel;
 
 	public GameObject bloodSplash;
 	public GameObject deathFx;
@@ -26,7 +28,9 @@ public class Boss1 : MonoBehaviour {
 	float dealDamTime = 1.5f;
 
 	void Start(){
+		hurtPanel = GameObject.FindGameObjectWithTag("HurtPanel").GetComponent<HurtPanel>();
 		shake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
+		tracker = GameObject.FindGameObjectWithTag("Tracker").GetComponent<FireTracker>();
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 
 		if(targets == null){
@@ -42,7 +46,7 @@ public class Boss1 : MonoBehaviour {
 			transform.position = Vector2.MoveTowards(transform.position, targets[0].transform.position, speed * Time.deltaTime);
 		}
 
-		gm.bossDisplay.text = "The Dark Mother : " + health;
+		tracker.bossDisplay.text = "The Dark Mother : " + health;
 
 		if(health <= 0){
 			Instantiate(deathFx, transform.position, Quaternion.identity);
@@ -64,6 +68,7 @@ public class Boss1 : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Player") && dealDam == true){
+			hurtPanel.Anim();
 			dealDam = false;
 			gm.TakeDamage(damage);
 		}

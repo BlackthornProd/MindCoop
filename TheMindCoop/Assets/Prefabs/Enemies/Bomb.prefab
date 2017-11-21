@@ -210,8 +210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624de759b108faa4c9e1b035fa957bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 5
-  damage: 15
+  lifetime: 6
+  damage: 20
   explosion: {fileID: 1475945468323640, guid: e27cad2376e2ede45bb09a3a900db9b7, type: 2}
   bombMark: {fileID: 1467389783103930, guid: 418bc1c1b5ea85b40a2118c5c4180b21, type: 2}
 --- !u!122 &122517640832861430

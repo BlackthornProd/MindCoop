@@ -6,7 +6,10 @@ public class Wall : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Enemy")){
-			other.GetComponent<Fatty>().randomPos = 0;
+			if(other.GetComponent<Enemy>().isFatty == true){
+				other.GetComponent<Fatty>().randomPos = 0;
+			}
+
 		}
 	}
 }

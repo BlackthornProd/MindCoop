@@ -120,7 +120,7 @@ MonoBehaviour:
   speed: 40
   range: 0.5
   damage: 10
-  destructionTime: 0.65
+  destructionTime: 1
 --- !u!212 &212020528102669516
 SpriteRenderer:
   m_ObjectHideFlags: 1

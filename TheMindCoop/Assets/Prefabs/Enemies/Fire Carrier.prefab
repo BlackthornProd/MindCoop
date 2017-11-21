@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e222a9b365af3bd46a83a00edecb2de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 100
   damage: 80
   dropChance: 100
   drops:
@@ -561,6 +561,7 @@ MonoBehaviour:
   - {fileID: 1371665178871584, guid: 65a186d569c37594c8973928bf507ad5, type: 2}
   isFatty: 0
   isCarrier: 1
+  isMerchant: 0
 --- !u!122 &122080570329392478
 Halo:
   m_ObjectHideFlags: 1

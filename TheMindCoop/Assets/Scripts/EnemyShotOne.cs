@@ -11,7 +11,10 @@ public class EnemyShotOne : MonoBehaviour {
 	private GameMaster gm;
 	public GameObject destroyEffect;
 
+	HurtPanel hurtPanel;
+
 	void Start(){
+		hurtPanel = GameObject.FindGameObjectWithTag("HurtPanel").GetComponent<HurtPanel>();
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 		Invoke("DestroyFx", 3f);
 		randomDir = Random.Range(1, 5);
@@ -35,6 +38,7 @@ public class EnemyShotOne : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.tag == "Player"){
+			hurtPanel.Anim();
 			gm.TakeDamage(damage);
 			DestroyFx();
 		}

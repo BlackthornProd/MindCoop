@@ -12,7 +12,10 @@ public class Bomb : MonoBehaviour {
 	public GameObject explosion;
 	public GameObject bombMark;
 
+	HurtPanel hurtPanel;
+
 	void Start(){
+		hurtPanel = GameObject.FindGameObjectWithTag("HurtPanel").GetComponent<HurtPanel>();
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 	}
 
@@ -32,13 +35,13 @@ public class Bomb : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.tag == "Player"){
+			hurtPanel.Anim();
 			gm.TakeDamage(damage);
 			DestroyBomb(1);
 		}
 	}
 
 	public void DestroyBomb(int damage){
-		Debug.Log("Hellio");
 		Vector2 pos = new Vector2(transform.position.x, transform.position.y + 2f);
 		GameObject fx = (GameObject)Instantiate(explosion, pos, Quaternion.identity);
 		Instantiate(bombMark, transform.position, Quaternion.identity);

@@ -19,10 +19,10 @@ public class PiercingProjectileBoost : MonoBehaviour {
 
 		if(other.CompareTag("Player")){
 				if(other.GetComponent<Player>().player1 == true){
-					playerTwo.usedWeapon.bullet = piercingProjectile;
+					playerOne.usedWeapon.bullet = piercingProjectile;
 					Destroy(gameObject);
 				} else if(other.GetComponent<Player>().player1 == false){
-					playerOne.usedWeapon.bullet = piercingProjectile;
+					playerTwo.usedWeapon.bullet = piercingProjectile;
 					Destroy(gameObject);
 				}
 			}

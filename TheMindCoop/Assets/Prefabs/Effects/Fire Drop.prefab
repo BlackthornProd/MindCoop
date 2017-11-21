@@ -126,11 +126,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb421c07a1fb6a43a7848e644e5fe32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireBoost: 10
-  fireBoostDefault: 10
+  fireBoost: 25
+  fireBoostDefault: 25
   effect: {fileID: 1330013873456904, guid: c64a05c5c5ee52142904abc3c4394463, type: 2}
-  fireDrop: {fileID: 0}
-  boost: 10
+  extraBoost: 10
 --- !u!122 &122468541378893172
 Halo:
   m_ObjectHideFlags: 1
