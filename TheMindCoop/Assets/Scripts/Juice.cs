@@ -25,8 +25,10 @@ public class Juice : MonoBehaviour {
 			img.sprite = juices[2];
 		} else if(gm.fire > 600 && gm.fire <= 800){
 			img.sprite = juices[3];
-		} else if(gm.fire > 800){
+		} else if(gm.fire > 800 && gm.fire <= 100){
 			img.sprite = juices[4];
+		} else if(gm.fire > 1000){
+			img.sprite = juices[5];
 		}
 
 	}

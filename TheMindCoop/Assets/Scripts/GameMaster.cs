@@ -34,7 +34,6 @@ public class GameMaster : MonoBehaviour {
 
 	void Start(){
 		fireTracker = GameObject.FindGameObjectWithTag("Tracker").GetComponent<FireTracker>();
-		Debug.Log("NOA");
 	}
 
 	void Update(){

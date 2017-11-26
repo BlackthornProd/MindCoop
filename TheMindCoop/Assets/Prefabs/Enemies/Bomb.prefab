@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1994185644893910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.690247, y: 1.1146308, z: 0}
+  m_LocalPosition: {x: -1.100954, y: -24.982885, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4148088200327848}
@@ -169,7 +169,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.14, y: 0.19}
   serializedVersion: 2
-  m_Radius: 1.17
+  m_Radius: 1.14
 --- !u!95 &95832800945256948
 Animator:
   serializedVersion: 3
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7304c71d725dd439f0adf17d400ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 7
 --- !u!114 &114504958693606832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 6
-  damage: 20
+  damage: 40
   explosion: {fileID: 1475945468323640, guid: e27cad2376e2ede45bb09a3a900db9b7, type: 2}
   bombMark: {fileID: 1467389783103930, guid: 418bc1c1b5ea85b40a2118c5c4180b21, type: 2}
 --- !u!122 &122517640832861430

@@ -792,9 +792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possibleSpawns:
-  - {fileID: 1783592392432024, guid: 5c6cddcbd686a554a90963476e841afb, type: 2}
-  - {fileID: 1783592392432024, guid: 5c6cddcbd686a554a90963476e841afb, type: 2}
-  - {fileID: 1783592392432024, guid: 5c6cddcbd686a554a90963476e841afb, type: 2}
+  - {fileID: 1418182246286690, guid: a8a8ef0aa01d84b428e00ddcac8a235e, type: 2}
   - {fileID: 1783592392432024, guid: 5c6cddcbd686a554a90963476e841afb, type: 2}
 --- !u!114 &114826866717340150
 MonoBehaviour:

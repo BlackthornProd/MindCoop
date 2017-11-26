@@ -20,8 +20,6 @@ public class Enemy : MonoBehaviour {
 	private Fatty fatty;
 	public bool isCarrier;
 	private FireCarrier carrier;
-	public bool isMerchant;
-	private Merchant merchant;
 
 
 	private HurtPanel hurtPanel;
@@ -36,10 +34,6 @@ public class Enemy : MonoBehaviour {
 
 		if(isCarrier == true){
 			carrier = GetComponent<FireCarrier>();
-		}
-
-		if(isMerchant == true){
-			merchant = GetComponent<Merchant>();
 		}
 	}
 
@@ -67,10 +61,6 @@ public class Enemy : MonoBehaviour {
 			carrier.enabled = true;
 		}
 
-		if(isMerchant == true){
-				merchant.isAngry = true;
-		}
-
 		health -= damage;
 
 	}
@@ -81,10 +71,6 @@ public class Enemy : MonoBehaviour {
 
 			hurtPanel.Anim();
 			gm.TakeDamage(damage);
-
-			if(isMerchant == true){
-				merchant.isAngry = true;
-			}
 			health = 0;
 		} 
 	}

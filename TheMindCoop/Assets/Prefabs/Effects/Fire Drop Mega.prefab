@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb421c07a1fb6a43a7848e644e5fe32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireBoost: 200
-  fireBoostDefault: 200
+  fireBoost: 75
+  fireBoostDefault: 75
   effect: {fileID: 1330013873456904, guid: c64a05c5c5ee52142904abc3c4394463, type: 2}
   extraBoost: 10
 --- !u!122 &122598146472272878

@@ -30,6 +30,18 @@ public class Boss2 : MonoBehaviour {
 	public float maxMovingTowards;
 
 
+	[Header ("Blood Trail Effect")]
+	public GameObject[] bloodTrailSmall;
+	public GameObject[] bloodTrailBig;
+	public Transform rewardPos;
+	public GameObject[] reward;
+	public float timeBtwBlood = 0.5f;
+
+	[Header ("Death Stuff")]
+	public GameObject bloodSplash;
+	public GameObject portal;
+	public GameObject deathEffect;
+
 	void Start(){	
 		randomPos = Random.Range(0, poses.Length);
 		timeMovingTowards = Random.Range(minMovingTowards, maxMovingTowards);
@@ -42,32 +54,70 @@ public class Boss2 : MonoBehaviour {
 
 	void Update(){
 
+		
+
+
 		// CHANGE HEAD GRAPHICS
-		if(health > 0 && health <= 5){
+		if(health > 0 && health <= 150){
 			head.sprite = heads[0];
-		} else if(health > 5 && health <= 10){
+			speed = 25;
+			startTimeBtwBomb = .5f;
+			if(timeBtwBlood <=  0){
+				int randomBlood = Random.Range(0, bloodTrailBig.Length);
+				GameObject fx = (GameObject)Instantiate(bloodTrailBig[randomBlood], transform.position, Quaternion.identity);
+				Destroy(fx, 3f);
+				timeBtwBlood = 0.12f;
+			} else {
+				timeBtwBlood-= Time.deltaTime;
+			}
+		} else if(health > 150 && health <= 300){
 			head.sprite = heads[1];
-		} else if(health > 10 && health <= 15){
+			speed = 20;
+			startTimeBtwBomb = .75f;
+			if(timeBtwBlood <=  0){
+				int randomBlood = Random.Range(0, bloodTrailSmall.Length);
+				GameObject fx = (GameObject)Instantiate(bloodTrailSmall[randomBlood], transform.position, Quaternion.identity);
+				Destroy(fx, 3f);
+				timeBtwBlood = 0.12f;
+			} else {
+				timeBtwBlood-= Time.deltaTime;
+			}
+		} else if(health > 300 && health <= 450){
 			head.sprite = heads[2];
-		} else if(health > 15 && health <= 20){
+			speed = 18;
+			startTimeBtwBomb = 1.25f;
+			if(timeBtwBlood <=  0){
+				int randomBlood = Random.Range(0, bloodTrailBig.Length);
+				GameObject fx = (GameObject)Instantiate(bloodTrailSmall[randomBlood], transform.position, Quaternion.identity);
+				Destroy(fx, 3f);
+				timeBtwBlood = 0.12f;
+			} else {
+				timeBtwBlood-= Time.deltaTime;
+			}
+		} else if(health > 450 && health <= 600){
 			head.sprite = heads[3];
+			speed = 15;
 		}
 
 
-		tracker.bossDisplay.text = "Friendly Horror : " + health;
+		tracker.bossDisplay.text = "" + health;
 
 		// PATROL
+
+
+		if(transform.position == poses[randomPos].position){
+			timeMovingTowards = 0;
+		}
+
 		if(timeMovingTowards <= 0){
-			timeMovingTowards = Random.Range(minMovingTowards, maxMovingTowards);
 			randomPos = Random.Range(0, poses.Length);
+			timeMovingTowards = Random.Range(minMovingTowards, maxMovingTowards);
+
 		} else {
 			timeMovingTowards -= Time.deltaTime;
 			transform.position = Vector2.MoveTowards(transform.position, poses[randomPos].position, speed * Time.deltaTime);
 		}
 
-		if(transform.position == poses[randomPos].position){
-			timeMovingTowards = 0;
-		}
 
 
 		// BOMBS
@@ -88,6 +138,19 @@ public class Boss2 : MonoBehaviour {
 			} else {
 				dealDamTime -= Time.deltaTime;
 			}
+		}
+
+
+		if(health <= 0){
+
+			int randomReward = Random.Range(0, reward.Length);
+			Instantiate(reward[randomReward], transform.position, Quaternion.identity);
+			
+			Instantiate(bloodSplash, transform.position, Quaternion.identity);
+			Instantiate(deathEffect, transform.position, Quaternion.identity);
+			Instantiate(portal, transform.position, Quaternion.identity);
+
+			Destroy(gameObject);
 		}
 		
 	}

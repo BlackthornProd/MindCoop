@@ -7,8 +7,10 @@ public class Portal : MonoBehaviour {
 
 
 	private GameMaster gm;
+	private FadePanel fadePanel;
 
 	void Start(){
+		fadePanel = GameObject.FindGameObjectWithTag("FadePanel").GetComponent<FadePanel>();
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 	
 	}
@@ -17,15 +19,18 @@ public class Portal : MonoBehaviour {
 		if(gm.fire <= 0){
 			SceneManager.LoadScene("Level1");
 		}
-
-
-
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Player")){
 			Debug.Log(gm.fire);
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+			StartCoroutine(LoadScene());
 		}
+	}
+
+	IEnumerator LoadScene(){
+		fadePanel.FadeIn();
+		yield return new WaitForSeconds(0.5f);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }

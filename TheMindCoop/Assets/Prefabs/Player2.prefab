@@ -237,7 +237,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1137736666073852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19, y: 6.94, z: 0}
+  m_LocalPosition: {x: 0.19, y: 6.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4828495232472556}
@@ -466,9 +466,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c766b70266717947933a78f7e2373b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startFireRate: 0.25
-  bullet: {fileID: 1637477021659810, guid: 9baca4e674f834d3d9023a41dea25f1f, type: 2}
+  startFireRate: 0.15
+  bullet: {fileID: 114316186490809608, guid: 9baca4e674f834d3d9023a41dea25f1f, type: 2}
   shotPoint: {fileID: 4268716486732442}
+  shotEffect: {fileID: 1740727847928906, guid: 376deda44f21f3a48b86ea67bdd58c58, type: 2}
   player1: 0
   currentWeapon: 1
 --- !u!212 &212211510636768892

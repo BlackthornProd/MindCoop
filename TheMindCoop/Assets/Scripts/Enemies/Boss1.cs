@@ -27,6 +27,9 @@ public class Boss1 : MonoBehaviour {
 	bool dealDam = true;
 	float dealDamTime = 1.5f;
 
+	public GameObject[] reward;
+	public Transform rewardPos;
+
 	void Start(){
 		hurtPanel = GameObject.FindGameObjectWithTag("HurtPanel").GetComponent<HurtPanel>();
 		shake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
@@ -46,9 +49,13 @@ public class Boss1 : MonoBehaviour {
 			transform.position = Vector2.MoveTowards(transform.position, targets[0].transform.position, speed * Time.deltaTime);
 		}
 
-		tracker.bossDisplay.text = "The Dark Mother : " + health;
+		tracker.bossDisplay.text = "" + health;
 
 		if(health <= 0){
+
+			int randomReward = Random.Range(0, reward.Length);
+			Instantiate(reward[randomReward], transform.position, Quaternion.identity);
+
 			Instantiate(deathFx, transform.position, Quaternion.identity);
 			Instantiate(bloodSplash, transform.position, Quaternion.identity);
 			Instantiate(portal, transform.position, Quaternion.identity);

@@ -13,10 +13,12 @@ public class Bomb : MonoBehaviour {
 	public GameObject bombMark;
 
 	HurtPanel hurtPanel;
+	CameraShake shake;
 
 	void Start(){
 		hurtPanel = GameObject.FindGameObjectWithTag("HurtPanel").GetComponent<HurtPanel>();
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+		shake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
 	}
 
 	void Update(){
@@ -42,6 +44,7 @@ public class Bomb : MonoBehaviour {
 	}
 
 	public void DestroyBomb(int damage){
+		shake.Shake(.1f, .1f);
 		Vector2 pos = new Vector2(transform.position.x, transform.position.y + 2f);
 		GameObject fx = (GameObject)Instantiate(explosion, pos, Quaternion.identity);
 		Instantiate(bombMark, transform.position, Quaternion.identity);

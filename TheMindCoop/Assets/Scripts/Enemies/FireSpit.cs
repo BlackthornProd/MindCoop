@@ -17,7 +17,7 @@ public class FireSpit : MonoBehaviour {
 
 	void Start(){
 		hurtPanel = GameObject.FindGameObjectWithTag("HurtPanel").GetComponent<HurtPanel>();
-		speed = Random.Range(4, 8);
+		speed = Random.Range(6, 10);
 		lifeTime = Random.Range(3, 8);
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 		Invoke("DestroySpit", lifeTime);

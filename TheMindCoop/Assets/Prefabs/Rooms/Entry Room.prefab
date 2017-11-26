@@ -788,8 +788,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possibleSpawns:
-  - {fileID: 1781057419004212, guid: bc51cdde70081e048b92a5815aa683a6, type: 2}
+  - {fileID: 1847294353599008, guid: 81f6ca209e49cfe44b14dbf2bab9024f, type: 2}
   - {fileID: 1367157530681384, guid: b421f580c632f514fa69596a215699f1, type: 2}
+  - {fileID: 1418182246286690, guid: a8a8ef0aa01d84b428e00ddcac8a235e, type: 2}
 --- !u!114 &114085083626723678
 MonoBehaviour:
   m_ObjectHideFlags: 1

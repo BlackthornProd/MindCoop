@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e222a9b365af3bd46a83a00edecb2de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 10
   damage: 20
   dropChance: 0
   drops: []

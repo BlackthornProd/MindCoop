@@ -668,8 +668,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  damage: 40
-  dropChance: 50
+  damage: 30
+  dropChance: 20
   drops:
   - {fileID: 1093313537042454, guid: 62b4f212a7ee55f42a9b501f7ea14f9b, type: 2}
   bloodSplash:
@@ -679,7 +679,6 @@ MonoBehaviour:
   - {fileID: 1564617576159718, guid: 58b31a850d1072f45bcd2af5aac3883d, type: 2}
   isFatty: 1
   isCarrier: 0
-  isMerchant: 0
 --- !u!114 &114929184850146300
 MonoBehaviour:
   m_ObjectHideFlags: 1
