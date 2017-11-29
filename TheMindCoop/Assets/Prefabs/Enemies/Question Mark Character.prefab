@@ -395,6 +395,7 @@ MonoBehaviour:
   - {fileID: 1348051181128182, guid: 3d93ead520656084995cb6ea018c8534, type: 2}
   - {fileID: 1348051181128182, guid: 3d93ead520656084995cb6ea018c8534, type: 2}
   - {fileID: 1093313537042454, guid: 62b4f212a7ee55f42a9b501f7ea14f9b, type: 2}
+  - {fileID: 1497082882871764, guid: 9f0d7c62529389748a956360d3b6afb3, type: 2}
   surprisePoses:
   - {fileID: 4978272269860908}
   - {fileID: 4274726107645958}

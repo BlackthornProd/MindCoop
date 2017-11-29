@@ -904,6 +904,7 @@ MonoBehaviour:
   possibleSpawns:
   - {fileID: 1348051181128182, guid: 3d93ead520656084995cb6ea018c8534, type: 2}
   - {fileID: 1783592392432024, guid: 5c6cddcbd686a554a90963476e841afb, type: 2}
+  - {fileID: 1497082882871764, guid: 9f0d7c62529389748a956360d3b6afb3, type: 2}
 --- !u!114 &114550345658076850
 MonoBehaviour:
   m_ObjectHideFlags: 1

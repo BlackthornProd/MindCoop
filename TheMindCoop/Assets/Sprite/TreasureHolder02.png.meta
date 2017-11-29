@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 750e9dedf1ce7d64293e343092413073
+timeCreated: 1511900906
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TreasureHolder02_0
+    21300002: TreasureHolder02_1
+    21300004: TreasureHolder02_2
+    21300006: TreasureHolder02_3
+    21300008: TreasureHolder02_4
+    21300010: TreasureHolder02_5
+    21300012: TreasureHolder02_6
+    21300014: TreasureHolder02_7
+    21300016: TreasureHolder02_8
+    21300018: TreasureHolder02_9
+    21300020: TreasureHolder02_10
+    21300022: TreasureHolder02_11
+    21300024: TreasureHolder02_12
+    21300026: TreasureHolder02_13
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 65
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TreasureHolder02_0
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 833
+        width: 261
+        height: 228
+      alignment: 9
+      pivot: {x: 0.51242524, y: 0.08973346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_1
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 782
+        width: 52
+        height: 31
+      alignment: 9
+      pivot: {x: 0.7429927, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_2
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 778
+        width: 45
+        height: 33
+      alignment: 9
+      pivot: {x: 0.2192098, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_3
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 284
+        width: 69
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5332951, y: 0.12257341}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 446
+        width: 234
+        height: 223
+      alignment: 9
+      pivot: {x: 0.49244288, y: 0.08519603}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_4
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 437
+        width: 234
+        height: 223
+      alignment: 9
+      pivot: {x: 0.49244288, y: 0.08519603}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 442
+        width: 234
+        height: 223
+      alignment: 9
+      pivot: {x: 0.49244288, y: 0.08519603}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_7
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 391
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: 0.8749955, y: 0.44545594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_8
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 393
+        width: 43
+        height: 25
+      alignment: 9
+      pivot: {x: 0.17653638, y: 0.5000012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_9
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 171
+        width: 56
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5730509, y: 0.09784815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_10
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 16
+        width: 148
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5276409, y: 0.04628691}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_11
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 49
+        width: 337
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_12
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 162
+        width: 345
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreasureHolder02_13
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 24
+        width: 100
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

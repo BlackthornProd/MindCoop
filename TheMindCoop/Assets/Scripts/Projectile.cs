@@ -32,19 +32,19 @@ public class Projectile : MonoBehaviour {
 	void Update(){
 
 		// damage depending on FIRE
-		if(gm.fire > 0 && gm.fire <= 200){
+		if(gm.damage > 0 && gm.damage <= 10){
 			transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
 			damage = damOne;
-		} else if(gm.fire > 200 && gm.fire <= 400){
+		} else if(gm.damage > 10 && gm.damage <= 20){
 			transform.localScale = new Vector3(1f, 1f, 1f);
 			damage = damTwo;
-		} else if(gm.fire > 400 && gm.fire <= 600){
+		} else if(gm.damage > 20 && gm.damage <= 30){
 			transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 			damage = damThree;
-		} else if(gm.fire > 600 && gm.fire <= 800){
+		} else if(gm.damage > 30 && gm.damage <= 40){
 			transform.localScale = new Vector3(2f, 2f, 2f);
 			damage = damFour;
-		} else if(gm.fire > 800){
+		} else if(gm.damage > 40){
 			transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
 			damage = damFive;
 		}

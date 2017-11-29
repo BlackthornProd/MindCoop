@@ -17,6 +17,7 @@ TagManager:
   - Boss2
   - FadePanel
   - QuestionMark
+  - Grass
   layers:
   - Default
   - TransparentFX

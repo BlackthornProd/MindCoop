@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShieldBoost : MonoBehaviour {
+public class ExtraDam : MonoBehaviour {
 
 	private GameMaster gm;
+	public int damageBoost;
 
 	void Start(){
 
@@ -13,8 +14,8 @@ public class ShieldBoost : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Player")){
-			gm.shield += 100;
+			gm.damage += damageBoost;
 			Destroy(gameObject);
-		} 
+		}
 	}
 }
