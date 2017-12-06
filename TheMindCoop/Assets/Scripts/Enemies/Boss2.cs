@@ -29,6 +29,9 @@ public class Boss2 : MonoBehaviour {
 	public float minMovingTowards;
 	public float maxMovingTowards;
 
+	[Header("Death Choices")]
+	public GameObject deathChoices;
+	public Transform[] deathChoicesPoses;
 
 	[Header ("Blood Trail Effect")]
 	public GameObject[] bloodTrailSmall;
@@ -142,6 +145,10 @@ public class Boss2 : MonoBehaviour {
 
 
 		if(health <= 0){
+
+			for (int i = 0; i < deathChoicesPoses.Length; i++) {
+				Instantiate(deathChoices, deathChoicesPoses[i].position, Quaternion.identity);
+			}
 
 			int randomReward = Random.Range(0, reward.Length);
 			Instantiate(reward[randomReward], transform.position, Quaternion.identity);

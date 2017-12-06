@@ -16,11 +16,12 @@ public class Enemy : MonoBehaviour {
 	private GameMaster gm;
 	private CameraShake shake;
 
-	public bool isFatty = false;
+	public bool isFatty;
 	private Fatty fatty;
 	public bool isCarrier;
 	private FireCarrier carrier;
-
+	public bool isBomber;
+	private Bombed bombed;
 
 	private HurtPanel hurtPanel;
 
@@ -35,6 +36,10 @@ public class Enemy : MonoBehaviour {
 		if(isCarrier == true){
 			carrier = GetComponent<FireCarrier>();
 		}
+
+		if(isBomber == true){
+			bombed = GetComponent<Bombed>();
+		}
 	}
 
 	void Update(){
@@ -47,9 +52,15 @@ public class Enemy : MonoBehaviour {
 				int randomDrop = Random.Range(0, drops.Length);
 				Instantiate(drops[randomDrop], transform.position, transform.rotation);
 			}
+
+			// Exceptions
 			if(fatty != null){
 				fatty.Spawn();
 			}
+			if(bombed != null){
+				bombed.Death();
+			}
+
 			Destroy(gameObject);
 		}
 	}

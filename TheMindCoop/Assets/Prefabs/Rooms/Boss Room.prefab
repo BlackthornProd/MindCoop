@@ -778,7 +778,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   possibleSpawns:
   - {fileID: 1497082882871764, guid: 9f0d7c62529389748a956360d3b6afb3, type: 2}
-  - {fileID: 1367157530681384, guid: b421f580c632f514fa69596a215699f1, type: 2}
 --- !u!114 &114704469936169928
 MonoBehaviour:
   m_ObjectHideFlags: 1

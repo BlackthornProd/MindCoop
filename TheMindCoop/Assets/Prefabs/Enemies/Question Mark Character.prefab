@@ -191,7 +191,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1313326048039274}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.33, y: 4, z: 0}
+  m_LocalPosition: {x: -2.94, y: 4.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4948539247206676}
@@ -232,7 +232,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166537556276596}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.14, y: -0.38, z: 0}
+  m_LocalPosition: {x: -2.42, y: -2.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4948539247206676}
@@ -258,7 +258,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1418182246286690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.006172, y: 26.727287, z: -0.01552872}
+  m_LocalPosition: {x: 23.488861, y: -16.31309, z: -0.01552872}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4239370364203904}
@@ -277,7 +277,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1966065504614292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.57, y: -1.48, z: 0}
+  m_LocalPosition: {x: 2.51, y: -2.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4948539247206676}
@@ -395,13 +395,15 @@ MonoBehaviour:
   - {fileID: 1348051181128182, guid: 3d93ead520656084995cb6ea018c8534, type: 2}
   - {fileID: 1348051181128182, guid: 3d93ead520656084995cb6ea018c8534, type: 2}
   - {fileID: 1093313537042454, guid: 62b4f212a7ee55f42a9b501f7ea14f9b, type: 2}
-  - {fileID: 1497082882871764, guid: 9f0d7c62529389748a956360d3b6afb3, type: 2}
+  - {fileID: 1152830657280156, guid: 4f2fbd2b9448a76489557a888a24debf, type: 2}
+  - {fileID: 1152830657280156, guid: 4f2fbd2b9448a76489557a888a24debf, type: 2}
   surprisePoses:
   - {fileID: 4978272269860908}
   - {fileID: 4274726107645958}
   - {fileID: 4524937109042098}
   bloodSplash: {fileID: 1564617576159718, guid: 58b31a850d1072f45bcd2af5aac3883d,
     type: 2}
+  deathFx: {fileID: 1640085044667364, guid: bfc8e767ac6b57c48b693ca9f65d2386, type: 2}
 --- !u!212 &212239217607153994
 SpriteRenderer:
   m_ObjectHideFlags: 1

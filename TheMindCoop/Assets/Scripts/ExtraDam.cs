@@ -5,6 +5,7 @@ using UnityEngine;
 public class ExtraDam : MonoBehaviour {
 
 	private GameMaster gm;
+	public GameObject destroyFx;
 	public int damageBoost;
 
 	void Start(){
@@ -14,6 +15,8 @@ public class ExtraDam : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Player")){
+			GameObject fx = (GameObject)Instantiate(destroyFx, transform.position, Quaternion.identity);
+			Destroy(fx, 3f);
 			gm.damage += damageBoost;
 			Destroy(gameObject);
 		}

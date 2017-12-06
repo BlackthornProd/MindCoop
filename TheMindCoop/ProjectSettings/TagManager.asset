@@ -18,6 +18,8 @@ TagManager:
   - FadePanel
   - QuestionMark
   - Grass
+  - LootHolder
+  - Mid
   layers:
   - Default
   - TransparentFX

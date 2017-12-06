@@ -7,6 +7,7 @@ public class QuestionMark : MonoBehaviour {
 	public GameObject[] spawns;
 	public Transform[] surprisePoses;
 	public GameObject bloodSplash;
+	public GameObject deathFx;
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Player")){
@@ -15,6 +16,9 @@ public class QuestionMark : MonoBehaviour {
 	}
 
 	public void SpawnRandom(){
+		GameObject fx = (GameObject)Instantiate(deathFx, transform.position, Quaternion.identity);
+		Destroy(fx, 3f);
+
 		int randomSpawnOne = Random.Range(0, spawns.Length);
 		int randomSpawnTwo = Random.Range(0, spawns.Length);
 		int randomSpawnThree = Random.Range(0, spawns.Length);

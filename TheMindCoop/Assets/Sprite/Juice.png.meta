@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 208aa31e414ccc645b5c8b9c6a247a36
-timeCreated: 1511272080
+timeCreated: 1511962127
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,7 @@ TextureImporter:
     21300006: Juice_3
     21300008: Juice_4
     21300010: Juice_5
+    21300012: Juice_6
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -145,7 +146,7 @@ TextureImporter:
         width: 1000
         height: 1091
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,7 +160,7 @@ TextureImporter:
         width: 1000
         height: 1091
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +174,7 @@ TextureImporter:
         width: 1000
         height: 1091
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,7 +188,7 @@ TextureImporter:
         width: 1000
         height: 1091
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,7 +202,7 @@ TextureImporter:
         width: 1000
         height: 1091
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,6 +215,20 @@ TextureImporter:
         y: 0
         width: 1000
         height: 1091
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Juice_6
+      rect:
+        serializedVersion: 2
+        x: 4853
+        y: 0
+        width: 74
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

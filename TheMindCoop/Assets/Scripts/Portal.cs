@@ -16,9 +16,7 @@ public class Portal : MonoBehaviour {
 	}
 
 	void Update(){
-		if(gm.fire <= 0){
-			SceneManager.LoadScene("Level1");
-		}
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other){

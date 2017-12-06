@@ -37,9 +37,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4998073701733532}
   - component: {fileID: 212000800728383028}
-  - component: {fileID: 122809301231440618}
   m_Layer: 0
-  m_Name: GoldenSpalsh (1)
+  m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +51,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1371665178871584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.4, y: 6.17, z: 0}
+  m_LocalPosition: {x: -2.7559643, y: -6.309709, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4998073701733532}
@@ -78,17 +77,6 @@ Halo:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1371665178871584}
-  m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278215935
-  m_Size: 2.95
---- !u!122 &122809301231440618
-Halo:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1984805011698340}
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
@@ -131,7 +119,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 11.66, y: 11.23}
+  m_Size: {x: 11.71, y: 11.23}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -173,7 +161,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 11.66, y: 11.23}
+  m_Size: {x: 11.71, y: 11.23}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

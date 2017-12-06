@@ -558,10 +558,20 @@ MonoBehaviour:
   drops:
   - {fileID: 1093313537042454, guid: 62b4f212a7ee55f42a9b501f7ea14f9b, type: 2}
   - {fileID: 1453863622373478, guid: 281521b52ede30a489a24920086fbffc, type: 2}
+  - {fileID: 1453863622373478, guid: 281521b52ede30a489a24920086fbffc, type: 2}
+  - {fileID: 1453863622373478, guid: 281521b52ede30a489a24920086fbffc, type: 2}
+  - {fileID: 1453863622373478, guid: 281521b52ede30a489a24920086fbffc, type: 2}
+  - {fileID: 1453863622373478, guid: 281521b52ede30a489a24920086fbffc, type: 2}
+  - {fileID: 1453863622373478, guid: 281521b52ede30a489a24920086fbffc, type: 2}
+  - {fileID: 1867508297013828, guid: 13c0e76be2a0c424583f0f438346d767, type: 2}
   bloodSplash:
   - {fileID: 1371665178871584, guid: 65a186d569c37594c8973928bf507ad5, type: 2}
+  - {fileID: 1159206592656552, guid: dacff5e0ac50f2147b1f946e8e06dde6, type: 2}
+  - {fileID: 1834253384594422, guid: 06808980140fc2447b80a57d539ee0a7, type: 2}
+  - {fileID: 1134092988630890, guid: 77a7f1e915720e14f9775033c18cde98, type: 2}
   isFatty: 0
   isCarrier: 1
+  isBomber: 0
 --- !u!122 &122080570329392478
 Halo:
   m_ObjectHideFlags: 1

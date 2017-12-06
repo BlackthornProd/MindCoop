@@ -29,7 +29,7 @@ public class Juice : MonoBehaviour {
 			img.sprite = juices[4];
 		} else if(gm.fire > 1000){
 			img.sprite = juices[5];
-		}
+		} 
 
 	}
 }

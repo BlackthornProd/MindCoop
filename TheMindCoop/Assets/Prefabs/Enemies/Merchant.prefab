@@ -604,6 +604,7 @@ MonoBehaviour:
   - {fileID: 1867508297013828, guid: 13c0e76be2a0c424583f0f438346d767, type: 2}
   - {fileID: 1453863622373478, guid: 281521b52ede30a489a24920086fbffc, type: 2}
   - {fileID: 1738482424301976, guid: e10ed2afad494ef4b8c9e875f2855276, type: 2}
+  - {fileID: 1867508297013828, guid: 13c0e76be2a0c424583f0f438346d767, type: 2}
   bloodSplash:
   - {fileID: 1470778717992862, guid: 53604cdb411d0a045882fb5a73360f7e, type: 2}
   - {fileID: 1161993084350370, guid: 979df6a00b8374540951a864c43565ff, type: 2}
@@ -611,6 +612,7 @@ MonoBehaviour:
   - {fileID: 1564617576159718, guid: 58b31a850d1072f45bcd2af5aac3883d, type: 2}
   isFatty: 0
   isCarrier: 0
+  isBomber: 0
 --- !u!114 &114967982675982678
 MonoBehaviour:
   m_ObjectHideFlags: 1

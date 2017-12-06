@@ -14,7 +14,7 @@ public class FireBoost : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Player")){
-			gm.fireShield = 75;
+			gm.fireShield = 150;
 			GameObject fx = (GameObject) Instantiate(destroyFx, transform.position, Quaternion.identity);
 			Destroy(fx, 5f);
 			Destroy(gameObject);

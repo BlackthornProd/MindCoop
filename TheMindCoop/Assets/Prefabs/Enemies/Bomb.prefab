@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 6
-  damage: 40
+  damage: 50
   explosion: {fileID: 1475945468323640, guid: e27cad2376e2ede45bb09a3a900db9b7, type: 2}
   bombMark: {fileID: 1467389783103930, guid: 418bc1c1b5ea85b40a2118c5c4180b21, type: 2}
 --- !u!122 &122517640832861430

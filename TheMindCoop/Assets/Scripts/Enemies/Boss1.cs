@@ -20,6 +20,10 @@ public class Boss1 : MonoBehaviour {
 	private GameMaster gm;
 	private HurtPanel hurtPanel;
 
+	[Header("Death Choices")]
+	public GameObject deathChoices;
+	public Transform[] deathChoicesPoses;
+
 	public GameObject bloodSplash;
 	public GameObject deathFx;
 	public GameObject portal;
@@ -59,6 +63,10 @@ public class Boss1 : MonoBehaviour {
 			Instantiate(deathFx, transform.position, Quaternion.identity);
 			Instantiate(bloodSplash, transform.position, Quaternion.identity);
 			Instantiate(portal, transform.position, Quaternion.identity);
+
+			for (int i = 0; i < deathChoicesPoses.Length; i++) {
+				Instantiate(deathChoices, deathChoicesPoses[i].position, Quaternion.identity);
+			}
 			Destroy(gameObject);
 		}	
 

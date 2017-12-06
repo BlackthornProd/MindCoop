@@ -6,16 +6,26 @@ public class FadePanel : MonoBehaviour {
 
 	private Animator anim;
 
-	void Start(){
+	void Awake(){
 
 		anim = GetComponent<Animator>();
-		anim.SetTrigger("FadeOut");
+	}
+
+	void Start(){
+
+
+		if(anim != null){
+			anim.SetTrigger("FadeOut");
+		}
+
 	}
 
 
 
 	public void FadeIn(){
+		if(anim != null){
+			anim.SetTrigger("FadeIn");
+		}
 
-		anim.SetTrigger("FadeIn");
 	}
 }

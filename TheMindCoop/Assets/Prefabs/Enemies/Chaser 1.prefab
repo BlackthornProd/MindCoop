@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7304c71d725dd439f0adf17d400ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 10.5
 --- !u!114 &114772742435645192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -469,9 +469,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e222a9b365af3bd46a83a00edecb2de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  damage: 25
-  dropChance: 20
+  health: 15
+  damage: 50
+  dropChance: 40
   drops:
   - {fileID: 1093313537042454, guid: 62b4f212a7ee55f42a9b501f7ea14f9b, type: 2}
   bloodSplash:
@@ -481,6 +481,7 @@ MonoBehaviour:
   - {fileID: 1564617576159718, guid: 58b31a850d1072f45bcd2af5aac3883d, type: 2}
   isFatty: 0
   isCarrier: 0
+  isBomber: 0
 --- !u!122 &122045011000553984
 Halo:
   m_ObjectHideFlags: 1

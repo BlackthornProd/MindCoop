@@ -10,15 +10,18 @@ public class GameMaster : MonoBehaviour {
 
 	public int fire = 100;
 	public int damage = 5;
+
+	[Header ("Bubble")]
+	public int numIndex = 0;
 	public int costInDamage = 100;
 
 	[Header("References")]
 	private FireTracker fireTracker;
-
+	private FadePanel fadePanel;
 
 	[Header ("Fire Boost")]
 	public int fireShield;
-
+	public int shieldProtection;
 
 	void Awake(){
 		if(instance == null){
@@ -30,23 +33,39 @@ public class GameMaster : MonoBehaviour {
 	} 
 
 	void Start(){
+		fadePanel = GameObject.FindGameObjectWithTag("FadePanel").GetComponent<FadePanel>();
 		fireTracker = GameObject.FindGameObjectWithTag("Tracker").GetComponent<FireTracker>();
 	}
 
 	void Update(){
 
 
-		if(fire <= 0){
+		if(fire <= 0){		
+			costInDamage = 100;
+			numIndex = 0;
 			fireShield = 0;
-			SceneManager.LoadScene("Level1");
-			fire = 100;
+			StartCoroutine(LoadGameOver());
 		}
-
-
 	}
 
 	public void TakeDamage(int damage){
-		fireShield -= damage;
-		fire -= damage;
+		if(shieldProtection > 0){
+			shieldProtection -= damage;
+		} else {
+			fireShield -= damage;
+			fire -= damage;
+		}
 	}
+
+
+	IEnumerator LoadGameOver(){
+		
+		yield return new WaitForSeconds(2f);
+		fadePanel.FadeIn();
+		yield return new WaitForSeconds(.5f);
+		fire = 100;
+		SceneManager.LoadScene("GameOver");
+		Destroy(gameObject);
+	}
+
 }

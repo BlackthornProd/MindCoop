@@ -10,14 +10,17 @@ public class Player : MonoBehaviour {
 	private Animator anim;
 	public Weapon usedWeapon;
 	private Rigidbody2D rb;
+	private GameMaster gm;
 
 	float spawnFootprint = .2f;
 	public GameObject[] footprint;
 	int black;
 	float time = 1f;
 
+	public GameObject player;
 
 	void Start(){
+		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 	}
@@ -30,6 +33,10 @@ public class Player : MonoBehaviour {
 			} else {
 				time -= Time.deltaTime;
 			}
+		}
+
+		if(gm.fire <= 0){
+			player.SetActive(false);
 		}
 	}
 

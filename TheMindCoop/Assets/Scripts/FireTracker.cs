@@ -15,22 +15,26 @@ public class FireTracker : MonoBehaviour {
 	//public TextMeshProUGUI shieldDisplay;
 	public TextMeshProUGUI fireBoostDisplay;
 
+//	public GameObject shieldProtection;
+
 	void Start(){
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 	}
 
 	void Update(){
 
+		if(gm.shieldProtection > 0){
+		//	shieldProtection.SetActive(true);
+		} else {
+			//shieldProtection.SetActive(false);
+		}
 
 		fireDisplay.text = "" + gm.fire;
-		fireBoostDisplay.text = "+";
+		fireBoostDisplay.enabled = true;
 		//shieldDisplay.text = "" + gm.shield;
 		if(gm.fireShield <= 0){
-			fireBoostDisplay.text = "";
+			fireBoostDisplay.enabled = false;
 		}
-		/*if(gm.shield <= 0){
-			shieldDisplay.text = "" + 0;
-		}*/
 
 	}
 }

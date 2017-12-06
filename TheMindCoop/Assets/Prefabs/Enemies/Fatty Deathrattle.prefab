@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  damage: 20
+  damage: 25
   dropChance: 0
   drops: []
   bloodSplash:
@@ -511,6 +511,7 @@ MonoBehaviour:
   - {fileID: 1564617576159718, guid: 58b31a850d1072f45bcd2af5aac3883d, type: 2}
   isFatty: 0
   isCarrier: 0
+  isBomber: 0
 --- !u!212 &212092821160205606
 SpriteRenderer:
   m_ObjectHideFlags: 1

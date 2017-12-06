@@ -384,7 +384,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1234840451345516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.743568, y: -17.942558, z: 0}
+  m_LocalPosition: {x: 11.352982, y: -8.906211, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4234972337512032}
@@ -721,7 +721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771f7c7f19c1de043b38f9c948f13c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 600
+  health: 400
   head: {fileID: 212280100982342530}
   heads:
   - {fileID: 21300000, guid: 32120a85243019645b74c82d1ffb7905, type: 3}
@@ -747,6 +747,11 @@ MonoBehaviour:
   - {fileID: 4251471341749212}
   minMovingTowards: 1
   maxMovingTowards: 3
+  deathChoices: {fileID: 1497082882871764, guid: 9f0d7c62529389748a956360d3b6afb3,
+    type: 2}
+  deathChoicesPoses:
+  - {fileID: 4371832181109966}
+  - {fileID: 4499874068990438}
   bloodTrailSmall:
   - {fileID: 1928307504417452, guid: aef918bd2c2f4f042a32b5a219a2fee8, type: 2}
   - {fileID: 1039996905592144, guid: 5c2abba5aa135364aaab9716d322bca8, type: 2}
