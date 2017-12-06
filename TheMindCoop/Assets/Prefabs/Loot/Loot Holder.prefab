@@ -100,7 +100,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loot:
-  - {fileID: 1453863622373478, guid: 281521b52ede30a489a24920086fbffc, type: 2}
+  - {fileID: 1688899349976582, guid: ee7a8180b37939841acdd341ccf911a3, type: 2}
+  - {fileID: 1131813545162882, guid: 550e0d83c0e52f04090990d021c8c8a4, type: 2}
+  effect: {fileID: 1239604636079184, guid: b3b741e367f7dbd469172e8f8e025a47, type: 2}
   damage: 150
 --- !u!212 &212177911381068986
 SpriteRenderer:

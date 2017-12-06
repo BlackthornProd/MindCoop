@@ -19,15 +19,11 @@ public class FireTracker : MonoBehaviour {
 
 	void Start(){
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+		gm.shieldProtection = 0;
 	}
 
 	void Update(){
 
-		if(gm.shieldProtection > 0){
-		//	shieldProtection.SetActive(true);
-		} else {
-			//shieldProtection.SetActive(false);
-		}
 
 		fireDisplay.text = "" + gm.fire;
 		fireBoostDisplay.enabled = true;

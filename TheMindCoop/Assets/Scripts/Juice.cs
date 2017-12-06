@@ -17,17 +17,17 @@ public class Juice : MonoBehaviour {
 
 	void Update(){
 
-		if(gm.fire > 0 && gm.fire <= 200){
+		if(gm.fire > 0 && gm.fire <= 300){
 			img.sprite = juices[0];
-		} else if(gm.fire > 200 && gm.fire <= 400){
+		} else if(gm.fire > 300 && gm.fire <= 600){
 			img.sprite = juices[1];
-		} else if(gm.fire > 400 && gm.fire <= 600){
+		} else if(gm.fire > 600 && gm.fire <= 900){
 			img.sprite = juices[2];
-		} else if(gm.fire > 600 && gm.fire <= 800){
+		} else if(gm.fire > 1200 && gm.fire <= 1500){
 			img.sprite = juices[3];
-		} else if(gm.fire > 800 && gm.fire <= 100){
+		} else if(gm.fire > 1500 && gm.fire <= 1800){
 			img.sprite = juices[4];
-		} else if(gm.fire > 1000){
+		} else if(gm.fire > 2100){
 			img.sprite = juices[5];
 		} 
 

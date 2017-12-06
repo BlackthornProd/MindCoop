@@ -597,7 +597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   damage: 150
-  dropChance: 60
+  dropChance: 50
   drops:
   - {fileID: 1093313537042454, guid: 62b4f212a7ee55f42a9b501f7ea14f9b, type: 2}
   - {fileID: 1867508297013828, guid: 13c0e76be2a0c424583f0f438346d767, type: 2}

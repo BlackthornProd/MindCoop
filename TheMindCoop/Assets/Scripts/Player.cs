@@ -17,9 +17,9 @@ public class Player : MonoBehaviour {
 	int black;
 	float time = 1f;
 
-	public GameObject player;
 
 	void Start(){
+
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
@@ -36,7 +36,7 @@ public class Player : MonoBehaviour {
 		}
 
 		if(gm.fire <= 0){
-			player.SetActive(false);
+			this.gameObject.SetActive(false);
 		}
 	}
 

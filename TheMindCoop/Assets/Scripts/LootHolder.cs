@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class LootHolder : MonoBehaviour {
 
+	[Header ("Refernces")]
 	public GameObject[] loot;
 	private GameMaster gm;		
-	HurtPanel hurtPanel;
+	private HurtPanel hurtPanel;
+	public GameObject effect;
 
 	public int damage;
 
@@ -25,6 +27,7 @@ public class LootHolder : MonoBehaviour {
 	}
 
 	public void Death(){
+		Instantiate(effect, transform.position, Quaternion.identity);
 		hurtPanel.Anim();
 		gm.fire -= damage;
 		int rand = Random.Range(0, loot.Length);

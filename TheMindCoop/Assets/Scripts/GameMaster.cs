@@ -46,6 +46,8 @@ public class GameMaster : MonoBehaviour {
 			fireShield = 0;
 			StartCoroutine(LoadGameOver());
 		}
+
+		Debug.Log(shieldProtection);
 	}
 
 	public void TakeDamage(int damage){

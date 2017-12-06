@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db779a8fc4f77fb45804b105a47a2ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 400
+  health: 300
   speed: 9
   damage: 100
   spawns:
