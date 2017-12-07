@@ -61,7 +61,7 @@ public class Boss2 : MonoBehaviour {
 
 
 		// CHANGE HEAD GRAPHICS
-		if(health > 0 && health <= 150){
+		if(health > 0 && health <= 100){
 			head.sprite = heads[0];
 			speed = 25;
 			startTimeBtwBomb = .5f;
@@ -73,10 +73,10 @@ public class Boss2 : MonoBehaviour {
 			} else {
 				timeBtwBlood-= Time.deltaTime;
 			}
-		} else if(health > 150 && health <= 300){
+		} else if(health > 100 && health <= 200){
 			head.sprite = heads[1];
 			speed = 20;
-			startTimeBtwBomb = .75f;
+			startTimeBtwBomb = 1f;
 			if(timeBtwBlood <=  0){
 				int randomBlood = Random.Range(0, bloodTrailSmall.Length);
 				GameObject fx = (GameObject)Instantiate(bloodTrailSmall[randomBlood], transform.position, Quaternion.identity);
@@ -85,10 +85,10 @@ public class Boss2 : MonoBehaviour {
 			} else {
 				timeBtwBlood-= Time.deltaTime;
 			}
-		} else if(health > 300 && health <= 450){
+		} else if(health > 200 && health <= 300){
 			head.sprite = heads[2];
 			speed = 18;
-			startTimeBtwBomb = 1.25f;
+			startTimeBtwBomb = 1.5f;
 			if(timeBtwBlood <=  0){
 				int randomBlood = Random.Range(0, bloodTrailBig.Length);
 				GameObject fx = (GameObject)Instantiate(bloodTrailSmall[randomBlood], transform.position, Quaternion.identity);
@@ -97,9 +97,10 @@ public class Boss2 : MonoBehaviour {
 			} else {
 				timeBtwBlood-= Time.deltaTime;
 			}
-		} else if(health > 450 && health <= 600){
+		} else if(health > 300 && health <= 400){
 			head.sprite = heads[3];
 			speed = 15;
+			startTimeBtwBomb = 2f;
 		}
 
 
@@ -167,6 +168,10 @@ public class Boss2 : MonoBehaviour {
 			hurtPanel.Anim();
 			dealDam = false;
 			gm.TakeDamage(damage);
+		}
+
+		if(other.CompareTag("GoldenBirdShot")){
+			health -= other.GetComponent<GoldenBirdShot>().damage;
 		}
 	}
 

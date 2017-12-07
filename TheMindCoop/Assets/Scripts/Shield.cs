@@ -12,7 +12,7 @@ public class Shield : MonoBehaviour {
 	public GameObject effect;
 
 	[Header ("Stats")]
-	public int health = 250;
+	public int health = 300;
 	public float speed = 50f;
 
 
@@ -26,7 +26,7 @@ public class Shield : MonoBehaviour {
 
 		transform.position = Vector2.MoveTowards(transform.position, midPoint.position, speed * Time.deltaTime);
 
-		if(gm.shieldProtection <= 250 && gm.shieldProtection > 200){
+		if(gm.shieldProtection <= 300 && gm.shieldProtection > 200){
 			shieldBody.sprite = bodies[0];
 		} else if(gm.shieldProtection <= 200 && gm.shieldProtection > 150){
 			shieldBody.sprite = bodies[1];

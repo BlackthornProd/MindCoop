@@ -8,7 +8,6 @@ public class FireTracker : MonoBehaviour {
 
 	private GameMaster gm;	
 
-
 	public TextMeshProUGUI bossDisplay;
 	public TextMeshProUGUI fireDisplay;
 	public TextMeshProUGUI buyPrompt;

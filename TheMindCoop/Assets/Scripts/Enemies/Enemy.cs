@@ -84,5 +84,15 @@ public class Enemy : MonoBehaviour {
 			gm.TakeDamage(damage);
 			health = 0;
 		} 
+
+		if(other.CompareTag("Hunger")){
+				health -= other.GetComponent<GoldenHunger>().damage;
+			
+		}
+
+		if(other.CompareTag("GoldenBirdShot")){
+			health -= other.GetComponent<GoldenBirdShot>().damage;
+		}
+
 	}
 }

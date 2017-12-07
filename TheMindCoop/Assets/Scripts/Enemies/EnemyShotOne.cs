@@ -37,11 +37,12 @@ public class EnemyShotOne : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if(other.tag == "Player"){
+		if(other.CompareTag("Player")){
 			hurtPanel.Anim();
 			gm.TakeDamage(damage);
 			DestroyFx();
-		}
+		} 
+	
 	}
 
 	void DestroyFx(){

@@ -10,9 +10,9 @@ public class QuestionMark : MonoBehaviour {
 	public GameObject deathFx;
 
 	void OnTriggerEnter2D(Collider2D other){
-		if(other.CompareTag("Player")){
+		if(other.CompareTag("Player") || other.CompareTag("Hunger")){
 			SpawnRandom();
-		}
+		} 
 	}
 
 	public void SpawnRandom(){

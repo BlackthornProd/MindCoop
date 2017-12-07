@@ -87,6 +87,10 @@ public class Boss1 : MonoBehaviour {
 			dealDam = false;
 			gm.TakeDamage(damage);
 		}
+
+		if(other.CompareTag("GoldenBirdShot")){
+			health -= other.GetComponent<GoldenBirdShot>().damage;
+		}
 	}
 
 

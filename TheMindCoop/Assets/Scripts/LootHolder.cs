@@ -12,6 +12,7 @@ public class LootHolder : MonoBehaviour {
 
 	public int damage;
 
+
 	void Start(){
 
 		hurtPanel = GameObject.FindGameObjectWithTag("HurtPanel").GetComponent<HurtPanel>();
@@ -20,7 +21,6 @@ public class LootHolder : MonoBehaviour {
 
 
 	void OnTriggerEnter2D(Collider2D other){
-		Debug.Log("LOOOT");
 		if(other.CompareTag("Player")){
 			Death();
 		}

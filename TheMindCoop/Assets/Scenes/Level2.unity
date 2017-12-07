@@ -9749,7 +9749,7 @@ GameObject:
   - component: {fileID: 529116457}
   m_Layer: 0
   m_Name: Camera Midway Point
-  m_TagString: Untagged
+  m_TagString: Mid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34837,6 +34837,68 @@ MonoBehaviour:
   - {fileID: 1909515348450874, guid: bfd323ecccd98954ba2e6497e9b22459, type: 2}
   - {fileID: 1761551688366966, guid: 16744f9bc1eb70a48b72e0dd4e448610, type: 2}
   - {fileID: 1406647326389306, guid: 3b4d9aad506b73f4eb0464a0ffd401b0, type: 2}
+--- !u!1001 &1979051270
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4914338355030702, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 14.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914338355030702, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -14.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914338355030702, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914338355030702, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914338355030702, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914338355030702, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914338355030702, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914338355030702, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 212004836857321178, guid: ca0a4f45fb413804cb4121a2e77331c4,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 649190743
+      objectReference: {fileID: 0}
+    - target: {fileID: 212004836857321178, guid: ca0a4f45fb413804cb4121a2e77331c4,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 212809620250676972, guid: ca0a4f45fb413804cb4121a2e77331c4,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 649190743
+      objectReference: {fileID: 0}
+    - target: {fileID: 212809620250676972, guid: ca0a4f45fb413804cb4121a2e77331c4,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1979363554
 GameObject:
   m_ObjectHideFlags: 0
