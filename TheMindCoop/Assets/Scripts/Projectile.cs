@@ -97,7 +97,7 @@ public class Projectile : MonoBehaviour {
 			other.GetComponent<QuestionMark>().SpawnRandom();
 			StartCoroutine(AnimWait());
 		} else if(other.CompareTag("LootHolder")){
-			other.GetComponent<LootHolder>().Death();
+			other.GetComponent<LootHolder>().TakeDamage(damage);
 			StartCoroutine(AnimWait());
 		}
 

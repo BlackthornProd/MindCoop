@@ -438,7 +438,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1781057419004212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.065058, y: 66.8883, z: -0.0546875}
+  m_LocalPosition: {x: 21.692968, y: -25.658573, z: -0.0546875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4385257541922762}
@@ -600,11 +600,13 @@ MonoBehaviour:
   dropChance: 50
   drops:
   - {fileID: 1093313537042454, guid: 62b4f212a7ee55f42a9b501f7ea14f9b, type: 2}
-  - {fileID: 1867508297013828, guid: 13c0e76be2a0c424583f0f438346d767, type: 2}
-  - {fileID: 1867508297013828, guid: 13c0e76be2a0c424583f0f438346d767, type: 2}
   - {fileID: 1453863622373478, guid: 281521b52ede30a489a24920086fbffc, type: 2}
+  - {fileID: 1093313537042454, guid: 62b4f212a7ee55f42a9b501f7ea14f9b, type: 2}
   - {fileID: 1738482424301976, guid: e10ed2afad494ef4b8c9e875f2855276, type: 2}
+  - {fileID: 1093313537042454, guid: 62b4f212a7ee55f42a9b501f7ea14f9b, type: 2}
+  - {fileID: 1398961265769550, guid: 7296db86cc6a2de49b680ce32c4a75da, type: 2}
   - {fileID: 1867508297013828, guid: 13c0e76be2a0c424583f0f438346d767, type: 2}
+  - {fileID: 1093313537042454, guid: 62b4f212a7ee55f42a9b501f7ea14f9b, type: 2}
   bloodSplash:
   - {fileID: 1470778717992862, guid: 53604cdb411d0a045882fb5a73360f7e, type: 2}
   - {fileID: 1161993084350370, guid: 979df6a00b8374540951a864c43565ff, type: 2}

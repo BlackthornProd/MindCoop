@@ -16968,11 +16968,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4914338355030702, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 14.34
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 4914338355030702, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -14.38
+      value: -29.3
       objectReference: {fileID: 0}
     - target: {fileID: 4914338355030702, guid: ca0a4f45fb413804cb4121a2e77331c4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -32645,9 +32645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomTemplates:
-  - {fileID: 1362596631076808, guid: 841841f1b0ad0e8439f4090b21fcd7b3, type: 2}
-  - {fileID: 1500007442089466, guid: 435e5f8c8fad68f40a8337620bfed67f, type: 2}
-  - {fileID: 1096266076287174, guid: 71966d0ab31d821419269d78b070213c, type: 2}
+  - {fileID: 1609673125355192, guid: 7854c962de3e24b40b592d3a16ec4390, type: 2}
 --- !u!1 &1819316448
 GameObject:
   m_ObjectHideFlags: 0

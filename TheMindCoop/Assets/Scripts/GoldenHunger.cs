@@ -17,6 +17,7 @@ public class GoldenHunger : MonoBehaviour {
 	private float changeTime;
 	private int randTarget;
 	public float startChangeTime;
+	int rand;
 
 	void Awake(){
 		/*if(targets == null){
@@ -31,24 +32,26 @@ public class GoldenHunger : MonoBehaviour {
 
 		changeTime = 0;
 		speed = startSpeed;
+
+		randTarget = Random.Range(0, targets.Length);
+		rand = Random.Range(0, 2);
 	}
 
 	void Update(){
 
 		if(changeTime <= 0){
-			changeTime = 2f;
-			randTarget = Random.Range(1, 4);
+			changeTime = startChangeTime;
+			randTarget = Random.Range(1, targets.Length);
+			rand = Random.Range(0, 2);
 		} else {
 			changeTime -= Time.deltaTime;
 		}
 
-		if(randTarget == 1){
+		if(rand == 0){
 			transform.position = Vector2.MoveTowards(transform.position, midPoint.position, speed * Time.deltaTime);
-		} else if(randTarget == 2){
-			transform.position = Vector2.MoveTowards(transform.position, targets[0].transform.position, speed * Time.deltaTime);
-		} else if(randTarget == 3){
-			transform.position = Vector2.MoveTowards(transform.position, targets[1].transform.position, speed * Time.deltaTime);
-		}
+		} else if(rand == 1){
+			transform.position = Vector2.MoveTowards(transform.position, targets[randTarget].transform.position, speed * Time.deltaTime);
+		} 
 
 	}
 }

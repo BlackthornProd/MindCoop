@@ -92,6 +92,7 @@ public class Enemy : MonoBehaviour {
 
 		if(other.CompareTag("GoldenBirdShot")){
 			health -= other.GetComponent<GoldenBirdShot>().damage;
+			other.GetComponent<GoldenBirdShot>().Death();
 		}
 
 	}
