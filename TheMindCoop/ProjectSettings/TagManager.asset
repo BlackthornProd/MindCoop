@@ -22,6 +22,8 @@ TagManager:
   - Mid
   - Hunger
   - GoldenBirdShot
+  - PlayerShot
+  - Boss3
   layers:
   - Default
   - TransparentFX

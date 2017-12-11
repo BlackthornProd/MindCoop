@@ -13704,7 +13704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &803470446
 Transform:
   m_ObjectHideFlags: 0
@@ -30390,7 +30390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomTemplates:
-  - {fileID: 1801214206635636, guid: a6fa3e4fbc43c6847aab37ece4dde4aa, type: 2}
+  - {fileID: 1437955967312496, guid: f46be8799e7b6c648b5d5db7db14a7f8, type: 2}
 --- !u!1 &1704117823
 GameObject:
   m_ObjectHideFlags: 0

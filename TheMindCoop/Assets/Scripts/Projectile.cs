@@ -99,17 +99,22 @@ public class Projectile : MonoBehaviour {
 		} else if(other.CompareTag("LootHolder")){
 			other.GetComponent<LootHolder>().TakeDamage(damage);
 			StartCoroutine(AnimWait());
+		} else if(other.CompareTag("Boss3")){
+			other.GetComponent<Anger>().TakeDamage(damage);
+			StartCoroutine(AnimWait());
 		}
 
 	}
 
 
 	// When the projectile has hit something or has died out...
+
 	IEnumerator AnimWait(){
-		Destroy(halo);
-		anim.SetTrigger("Impact");
 		speed = 0;
 		damage = 0;
+		Destroy(halo);
+		anim.SetTrigger("Impact");
+	
 		yield return new WaitForSeconds(destructionTime);
 		Destroy(gameObject);
 	}

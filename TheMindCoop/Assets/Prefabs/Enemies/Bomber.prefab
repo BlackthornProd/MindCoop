@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114511693674525754}
   - component: {fileID: 70542928467221686}
   - component: {fileID: 50052393369320334}
+  - component: {fileID: 95619998236069738}
   m_Layer: 0
   m_Name: Bomber
   m_TagString: Enemy
@@ -224,7 +225,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1270008471999306}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.059999943, y: -0.8999996, z: -0.015625}
+  m_LocalPosition: {x: 0.05999994, y: -0.8999996, z: -0.015625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4487574210767992}
@@ -264,7 +265,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1152830657280156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.026844, y: -8.476889, z: 0.015625}
+  m_LocalPosition: {x: 19.352354, y: -23.208199, z: 0.015625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4197788419181256}
@@ -433,6 +434,23 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 1.2}
   m_Size: {x: 3.08, y: 4.46}
   m_Direction: 0
+--- !u!95 &95619998236069738
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1152830657280156}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 325fd1ac8ee8c6a42a4c9879865497f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114386006756562774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -444,8 +462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e222a9b365af3bd46a83a00edecb2de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
-  damage: 60
+  health: 25
+  damage: 50
   dropChance: 20
   drops:
   - {fileID: 1453863622373478, guid: 281521b52ede30a489a24920086fbffc, type: 2}
@@ -487,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7304c71d725dd439f0adf17d400ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 6.25
 --- !u!122 &122195539640180744
 Halo:
   m_ObjectHideFlags: 1

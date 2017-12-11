@@ -310,8 +310,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  minTime: 10
-  maxTime: 17
+  minTime: 5
+  maxTime: 15
+  maxFires: 40
   fireDrop: {fileID: 1398961265769550, guid: 7296db86cc6a2de49b680ce32c4a75da, type: 2}
 --- !u!212 &212008063903581574
 SpriteRenderer:

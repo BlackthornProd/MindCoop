@@ -9,6 +9,7 @@ public class Protection : MonoBehaviour {
 	public GameObject circle;
 	public Collider2D box;
 	public GameObject bubble;
+	public GameObject destroyEffect;
 
 	void Start(){
 		if(targets == null){
@@ -32,6 +33,8 @@ public class Protection : MonoBehaviour {
 			space.SetActive(false);
 			circle.SetActive(false);
 			bubble.SetActive(true);
-		}
+			Instantiate(destroyEffect, transform.position, Quaternion.identity);
+		} 
+
 	}
 }

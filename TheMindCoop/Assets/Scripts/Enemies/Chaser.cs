@@ -8,7 +8,6 @@ public class Chaser : MonoBehaviour {
 	private GameObject[] targets;
 	private GameMaster gm;
 
-
 	void Start(){
 		gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 		if(targets == null){
@@ -30,4 +29,5 @@ public class Chaser : MonoBehaviour {
 
 
 	}
+
 }

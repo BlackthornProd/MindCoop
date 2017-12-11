@@ -8,7 +8,7 @@ public class GoldenCat : MonoBehaviour {
 	private float timeBtwDrops;
 	public float minTime;
 	public float maxTime;
-	private int maxFires = 25;
+	public int maxFires = 25;
 
 	[Header ("References")]
 	private Transform midPoint;

@@ -50,7 +50,7 @@ public class Enemy : MonoBehaviour {
 			int dropOrNot = Random.Range(0, 100);
 			if(dropChance > dropOrNot){
 				int randomDrop = Random.Range(0, drops.Length);
-				Instantiate(drops[randomDrop], transform.position, transform.rotation);
+				Instantiate(drops[randomDrop], transform.position, Quaternion.identity);
 			}
 
 			// Exceptions

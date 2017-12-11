@@ -61,10 +61,10 @@ public class Boss2 : MonoBehaviour {
 
 
 		// CHANGE HEAD GRAPHICS
-		if(health > 0 && health <= 100){
+		if(health > 0 && health <= 150){
 			head.sprite = heads[0];
 			speed = 25;
-			startTimeBtwBomb = .5f;
+			startTimeBtwBomb = .39f;
 			if(timeBtwBlood <=  0){
 				int randomBlood = Random.Range(0, bloodTrailBig.Length);
 				GameObject fx = (GameObject)Instantiate(bloodTrailBig[randomBlood], transform.position, Quaternion.identity);
@@ -73,10 +73,10 @@ public class Boss2 : MonoBehaviour {
 			} else {
 				timeBtwBlood-= Time.deltaTime;
 			}
-		} else if(health > 100 && health <= 200){
+		} else if(health > 150 && health <= 300){
 			head.sprite = heads[1];
 			speed = 20;
-			startTimeBtwBomb = 1f;
+			startTimeBtwBomb = .75f;
 			if(timeBtwBlood <=  0){
 				int randomBlood = Random.Range(0, bloodTrailSmall.Length);
 				GameObject fx = (GameObject)Instantiate(bloodTrailSmall[randomBlood], transform.position, Quaternion.identity);
@@ -85,7 +85,7 @@ public class Boss2 : MonoBehaviour {
 			} else {
 				timeBtwBlood-= Time.deltaTime;
 			}
-		} else if(health > 200 && health <= 300){
+		} else if(health > 300 && health <= 450){
 			head.sprite = heads[2];
 			speed = 18;
 			startTimeBtwBomb = 1.5f;
@@ -97,7 +97,7 @@ public class Boss2 : MonoBehaviour {
 			} else {
 				timeBtwBlood-= Time.deltaTime;
 			}
-		} else if(health > 300 && health <= 400){
+		} else if(health > 450 && health <= 600){
 			head.sprite = heads[3];
 			speed = 15;
 			startTimeBtwBomb = 2f;
